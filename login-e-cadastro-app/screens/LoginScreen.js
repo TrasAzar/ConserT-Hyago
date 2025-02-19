@@ -38,13 +38,45 @@ const LoginScreen = ({ navigation }) => { // A tela de login, recebendo a navega
   );
 };
 
-const styles = StyleSheet.create({ // Define os estilos para os componentes
-  container: { flex: 1, padding: 20, backgroundColor: 'white' }, // Estilo do contêiner principal (preenchimento e fundo branco)
-  title: { fontSize: 26, fontWeight: 'bold', color: 'black' }, // Estilo do título (tamanho de fonte, peso e cor)
-  subtitle: { fontSize: 16, color: 'gray', marginBottom: 20 }, // Estilo do subtítulo (tamanho da fonte, cor e margem inferior)
-  backButton: { marginBottom: 10 }, // Estilo do botão de voltar (margem inferior)
-  backText: { fontSize: 24 }, // Estilo do texto de voltar (tamanho da fonte)
-  linkText: { color: 'blue', marginTop: 10, textAlign: 'center' }, // Estilo do texto do link (cor azul, margem superior e centralizado)
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: 'white'
+  },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: 'white'
+  },
+  header: {
+    marginBottom: 32
+  },
+  title: {
+    marginBottom: 8
+  },
+  subtitle: {
+    opacity: 0.7
+  },
+  form: {
+    gap: 16
+  },
+  input: {
+    marginBottom: 16
+  },
+  checkboxContainer: {
+    marginBottom: 24
+  },
+  checkbox: {
+    paddingHorizontal: 0
+  },
+  loginButton: {
+    marginBottom: 16,
+    paddingVertical: 6
+  },
+  registerButton: {
+    marginTop: 8
+  }
 });
 
-export default LoginScreen; // Exporta o componente LoginScreen para ser utilizado em outros arquivos
+export default LoginScreen;
+
